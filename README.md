@@ -2,8 +2,19 @@
 
 This repo contains a reference on provisioning a jenkins master with the jenkins operator.  
 
+**Background:**
+
+This is **_Part 2_** of a cluster setup 
+see the bellow repos for next and previous steps:
+
+* [Part 1 setting up EKS ](https://github.com/bbdsoftware/eks-bootstrap)
+* [Part 2 setting up CI](https://github.com/bbdsoftware/eks-jenkins-ci)
+* [Part 3 setting up CD ](https://github.com/bbdsoftware/eks-argo-cd)
+
+
 *NOTE*  
-PLease ensure that you have deployed the jenkins operator see https://github.com/bbdsoftware/eks-bootstrap#ci  
+PLease ensure that you have deployed the jenkins operator see 
+https://github.com/bbdsoftware/eks-bootstrap#ci  
   
 ## Creating a master 
  [jenkins-master.yaml ](./jenkins/jenkins-master.yaml) contains the manifest for bootstarping a jenkins master using the
