@@ -1,9 +1,10 @@
-multibranchPipelineJob('springbootk8sjenkinsopexample') {
+multibranchPipelineJob('spring-boot-example') {
     branchSources {
         git {
-            id('springbootk8sjenkinsopexample') // IMPORTANT: use a constant and unique identifier
-            url('https://github.com/bbdsoftware/eks-pring-boot-jenkinsop-example.git')
-            credentials('jenkins-github')
+            id('spring-boot-example') // IMPORTANT: use a constant and unique identifier
+            remote('https://github.com/bbdsoftware/eks-pring-boot-jenkinsop-example.git')
+            // Add credentials if needed
+            //credentials('jenkins-github')
             includes('*')
         }
     }
