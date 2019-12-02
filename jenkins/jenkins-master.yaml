@@ -74,8 +74,9 @@ spec:
   - id: jenkins-operator
     targets: "jobs/*.jenkins"
     description: "Jenkins Operator repository"
-    credentialType: usernamePassword
-    credentialID: jenkins-github
+# Add if repo required authentication see jenkins-github-sc.yaml
+#    credentialType: usernamePassword
+#    credentialID: jenkins-github
     repositoryBranch: master
     repositoryUrl: https://github.com/bbdsoftware/eks-jenkins-ci
 ---

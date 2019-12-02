@@ -3,7 +3,7 @@ multibranchPipelineJob('spring-boot-example') {
         git {
             id('spring-boot-example') // IMPORTANT: use a constant and unique identifier
             remote('https://github.com/bbdsoftware/eks-pring-boot-jenkinsop-example.git')
-            // Add credentials if needed
+            // Add credentials if needed see jenkins-github-sc.yaml
             //credentials('jenkins-github')
             includes('*')
         }
