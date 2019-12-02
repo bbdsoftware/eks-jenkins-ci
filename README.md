@@ -19,7 +19,7 @@ https://github.com/bbdsoftware/eks-bootstrap#ci
 ## Creating a master 
  [jenkins-master.yaml ](./jenkins/jenkins-master.yaml) contains the manifest for bootstarping a jenkins master using the
  jenkins operator. The manifest contains various plugins and a seed job configuration.  
- The seed job is configured to look at this git repository and load job dsl from the  jobs folder eg [spring-boot-k8s-jenkinsop-example.jenkins ](./jobs/spring-boot-k8s-jenkinsop-example.jenkins)
+ The seed job is configured to look at this git repository and load job dsl from the  jobs folder eg [spring-boot-k8s-jenkinsop-example.jenkins ](jobs/springbootk8sjenkinsopexample.jenkins)
 
 ```
 ....
@@ -43,12 +43,12 @@ Run
 
 ## Jobs via git 
 Once up and running a jenkins master will be available and the seed job run.
-The seed job will configure a multipipline job as defined in [spring-boot-k8s-jenkinsop-example.jenkins ](./jobs/spring-boot-k8s-jenkinsop-example.jenkins)
+The seed job will configure a multipipline job as defined in [spring-boot-k8s-jenkinsop-example.jenkins ](jobs/springbootk8sjenkinsopexample.jenkins)
 
 ```$xslt
        .....     
-            id('ql-portal') // IMPORTANT: use a constant and unique identifier
-            url('https://github.com/kanzifucius/spring-boot-k8s-jenkinsop-example.git')
+            id('spring-boot-k8s-jenkinsop-example') // IMPORTANT: use a constant and unique identifier
+            url('https://github.com/bbdsoftware/eks-pring-boot-jenkinsop-example.git')
             credentials('jenkins-github')
             includes('*')
         .....
